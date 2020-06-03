@@ -25,10 +25,10 @@ jobs:
     - name: Installing Node
       uses: actions/setup-node@v2-beta
       with:
-        node-versions: 12 
+        node-version: 12 
 
     # Runs a set of commands using the runners shell
     - name: Installing surge
-      run: npm install --global surge
+      run: npm install --g surge
     - name: deploy using surge
-      run: surge ./ bootcamp2020-urdu.surge.sh --token ${{ secrets.BOOTCAMP2020URDU_TOKEN }}
+      run: surge ./ bootcamp2020-urdu.surge.sh --token $ {{ secrets.BOOTCAMP2020URDU_TOKEN }}
